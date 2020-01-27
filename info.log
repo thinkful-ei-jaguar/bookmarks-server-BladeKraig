@@ -28,3 +28,13 @@
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"New bookmark with id 8f087dd8-726f-499c-997e-3c02a0244959 created","level":"info"}
+{"message":"The id 8cabbages could not be found","level":"error"}
+{"message":"New bookmark with id 9b01a7f5-c663-41c8-b35c-765ad4b5c70e created","level":"info"}
+{"message":"New bookmark with id 551a6fd8-9020-4ec0-a307-c34d463f94f7 created","level":"info"}
+{"message":"Bookmark with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"New bookmark with id 5733cd2a-72cf-456d-b67a-46c972f4f39f created","level":"info"}
+{"message":"Bookmark with id 5733cd2a-72cf-456d-b67a-46c972f4f39f deleted.","level":"info"}
+{"message":"Card with id 5733cd2a-72cf-456d-b67a-46c972f4f39f was not found","level":"error"}

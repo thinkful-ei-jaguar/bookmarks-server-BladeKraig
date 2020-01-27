@@ -9,7 +9,6 @@ let STORE  = require('./store');
 bookmarksRouter
   .route('/bookmarks')
   .get((req, res) => {
-    console.log(process.env);
     res.json(STORE);
   })
   .post(bodyParser, (req, res) => {
@@ -75,14 +74,13 @@ bookmarksRouter
         .status(404)
         .send(`Id ${id} not found`);
     }
-    STORE = STORE.filter(bookmark => {
-      bookmark.id !== id;
-    });
+    
+    STORE.splice(bookmarkIndex, 1);
 
+    logger.info(`Bookmark with id ${id} deleted.`)
     res
-      .status(200)
-      .send(`Bookmark with id ${id} deleted.`);
-
+      .status(204)
+      .end();
     
   });
   
