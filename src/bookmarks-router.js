@@ -9,7 +9,7 @@ let STORE  = require('./store');
 bookmarksRouter
   .route('/bookmarks')
   .get((req, res) => {
-    console.log(STORE);
+    console.log(process.env);
     res.json(STORE);
   })
   .post(bodyParser, (req, res) => {
@@ -49,9 +49,6 @@ bookmarksRouter
       .json(newBookmark);
   });
   
-  
-
-
 
 bookmarksRouter
   .route('/bookmarks/:id')

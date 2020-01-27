@@ -7,6 +7,7 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const bookmarksRouter = require('./bookmarks-router');
 const uuid = require('uuid/v4');
+const validiateBearerToken = require('./validation');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(morgan(morganOption));
 app.use(helmet());
 app.use(cors());
 app.use(bookmarksRouter);
+app.use(validiateBearerToken);
 
 app.get('/', (req, res) => {
   res.send('Hello, world!');
