@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 
-const STORE = [{
+let STORE = [{
   "id": "8sdfbvbs65sd",
   "title": "Google",
   "url": "http://google.com",
